@@ -1,11 +1,12 @@
 .court {
   margin: 5px;
   padding: 5px;
-  border: 2px solid #eee;
+  border: 2px solid rgb(148, 148, 148);
+  border-radius: 3px;
+  background-color: #fff;
 }
 
 .available {
-  border-radius: 3px;
   border-top: 5px solid #41b3a3;
 }
 
