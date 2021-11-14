@@ -1,7 +1,23 @@
 .court {
+  margin: 5px;
+  padding: 5px;
+}
+
+.available {
   background-color: green;
 }
 
-.inplay {
+.occupied {
   background-color: red;
+}
+
+.courtName {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 15px;
+}
+
+.playerName {
+  margin-top: 1px;
+  margin-bottom: 1px;
 }

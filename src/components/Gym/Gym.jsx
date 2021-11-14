@@ -1,5 +1,6 @@
 import React from 'react'
 import Court from '../Court/Court'
+import styles from './Gym.module.css'
 
 
 
@@ -12,7 +13,7 @@ function Gym() {
     }
 
     return (
-        <div style={{ display: 'flex' }}>
+        <div className={styles.gym}>
             {
                 courts
             }
