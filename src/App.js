@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Gym from'./components/Gym/Gym'
+import Gym from './components/Gym/Gym';
 
 function App() {
     return (
