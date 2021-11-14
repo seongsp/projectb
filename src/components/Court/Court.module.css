@@ -1,20 +1,22 @@
 .court {
   margin: 5px;
   padding: 5px;
+  border: 2px solid #eee;
 }
 
 .available {
-  background-color: green;
+  border-radius: 3px;
+  border-top: 5px solid #41b3a3;
 }
 
 .occupied {
-  background-color: red;
+  border-top: 5px solid #c38d9e;
 }
 
 .courtName {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  font-size: 15px;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  font-size: 12px;
 }
 
 .playerName {

@@ -1,8 +1,13 @@
 * {
   font-family: 'Roboto';
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .App {
   text-align: center;
+  margin: 5px;
+}
+
+body {
+  margin: 0px;
 }
