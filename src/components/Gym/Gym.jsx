@@ -41,7 +41,7 @@ function Gym() {
     return (
         <div id="gym-section" className={styles.gym}>
             {
-                courtList.map((idx, court) => (
+                courtList.map((court, idx) => (
                     <Court
                         key={idx}
                         {...court}
