@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Court.modules/css'
+import styles from './Court.module.css'
 import Player from '../Player/Player';
 import JoinCourt from './JoinCourt/JoinCourt';
 
@@ -13,11 +13,11 @@ function Court(props) {
                 handleJoinCourt={handleJoinCourt} 
                 courtNum={courtNum} 
             />
-            {
+            {/* {
                 playerList.map((player) => (
                     <Player {...player} />
                 ))
-            }
+            } */}
         </div>
     )
 }
