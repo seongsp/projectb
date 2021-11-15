@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Court.module.css'
 import Player from '../Player/Player';
 import JoinCourt from './JoinCourt/JoinCourt';
@@ -13,11 +13,16 @@ function Court(props) {
                 handleJoinCourt={handleJoinCourt} 
                 courtNum={courtNum} 
             />
-            {/* {
-                playerList.map((player) => (
-                    <Player {...player} />
+            
+            {
+                playerList.map((player, idx) => (
+                    <Player 
+                        key={idx}
+                        {...player} 
+                    />
                 ))
-            } */}
+            }
+            
         </div>
     )
 }

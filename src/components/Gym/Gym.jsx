@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Court from '../Court/Court';
-import styles from './Gym.module.css'
+import styles from './Gym.module.css';
+import generateName from '../../scripts/GenerateRandomName';
 
 function Gym() {
     const [courtList, setCourtList] = useState([]);
@@ -20,16 +21,19 @@ function Gym() {
     }
 
     function handleJoinCourt (name, courtNum) {
-        console.log(name, courtNum);
+        // generates a random name for now
+        let randomName = generateName();
+        console.log(randomName);
+        
         if (courtList[courtNum - 1].playerList.length === 4) {
             // push to waitList
             const courts = [...courtList];
-            courts[courtNum].waitList.push(name);
+            courts[courtNum].waitList.push(randomName);
             setCourtList(courts);
         } else {
             // push to playerList
             const courts = [...courtList];
-            courts[courtNum].playerList.push(name);
+            courts[courtNum - 1].playerList.push(randomName);
             setCourtList(courts);
         }
     };
@@ -37,11 +41,11 @@ function Gym() {
     useEffect(() => {
         setUpCourts();
     }, []);
-
+    
     return (
         <div id="gym-section" className={styles.gym}>
             {
-                courtList.map((idx, court) => (
+                courtList.map((court, idx) => (
                     <Court
                         key={idx}
                         {...court}
