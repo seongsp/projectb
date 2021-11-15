@@ -5,8 +5,6 @@ import JoinCourt from './JoinCourt/JoinCourt';
 
 function Court(props) {
     const {courtNum, playerList, waitList, handleJoinCourt} = props;
-    
-    console.log(playerList)
 
     return (
         <div className={`${styles.court} ${playerList.length < 4 ? styles.available : styles.occupied}`}>
@@ -20,7 +18,7 @@ function Court(props) {
                 playerList.map((player, idx) => (
                     <Player 
                         key={idx}
-                        {...player} 
+                        name={player}
                     />
                 ))
             }
