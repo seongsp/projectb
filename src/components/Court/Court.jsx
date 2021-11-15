@@ -6,6 +6,8 @@ import JoinCourt from './JoinCourt/JoinCourt';
 function Court(props) {
     const {courtNum, playerList, waitList, handleJoinCourt} = props;
     
+    console.log(courtNum)
+
     return (
         <div className={`${styles.court} ${styles.available}`}>
             <h2 className={styles.courtName}>Court {courtNum}</h2>
