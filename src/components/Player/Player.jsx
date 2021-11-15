@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-function Player() {
+function Player(props) {
+    const {name} = props;
+
     return (
         <div>
-            Player
+            Player Name: {name}
         </div>
     )
 }
 
-export default Player
+export default Player;
